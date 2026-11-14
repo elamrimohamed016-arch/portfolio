@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Amri Mohamed | Ingénieur en Mécatronique</title>
+    <!-- Typographie moderne : Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Icônes FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Curseur Personnalisé (Custom Cursor) -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <!-- Lueurs Ambiantes Dynamiques -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Navigation Flottante -->
+    <header id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo interactive">
+                <span class="mono-accent"></span>EL Amri Mohamed
+            </a>
+            <nav class="nav-links" id="nav-links">
+                <a href="#hero" class="nav-link active interactive" data-fr="Profil" data-en="Profile">Profil</a>
+                <a href="#project-hub" class="nav-link interactive" data-fr="Projet & Simulation" data-en="Project & Simulation">Projet & Simulation</a>
+                <a href="#certifications" class="nav-link interactive" data-fr="Certifications" data-en="Certifications">Certifications</a>
+                <a href="#skills" class="nav-link interactive" data-fr="Expertise" data-en="Expertise">Expertise</a>
+                
+                <!-- Contrôles : Langue & Thème -->
+                <div class="nav-controls">
+                    <button id="lang-toggle" class="control-btn interactive" aria-label="Changer de langue">EN</button>
+                    <button id="theme-toggle" class="control-btn interactive" aria-label="Changer de thème">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+
+                <a href="#contact" class="nav-link btn-nav interactive" data-fr="Contact" data-en="Contact">Contact</a>
+            </nav>
+            <button class="hamburger interactive" id="hamburger" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Section Hero / Profil -->
+    <section id="hero" class="hero section">
+        <div class="grid-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <div class="status-pill">
+                    <span class="pulse-dot"></span>
+                    <span data-fr="ENSA Tétouan • 5ème Année Génie Mécatronique • Recherche Stage PFE" data-en="ENSA Tetouan • 5th Year Mechatronics • Looking for PFE Internship">ENSA Tétouan • 5ème Année Génie Mécatronique • Recherche Stage PFE</span>
+                </div>
+                
+                <h1>El Amri <span class="gradient-text">Mohamed</span></h1>
+                
+                <p class="hero-subtitle" data-fr="Ingénieur en Mécatronique spécialisé en automatisme industriel, contrôle-commande, systèmes embarqués IoT et modélisation multiphysique sous MATLAB/Simulink." data-en="Mechatronics Engineer specialized in industrial automation, control systems, IoT embedded systems and multiphysics simulation under MATLAB/Simulink.">
+                    Ingénieur en Mécatronique spécialisé en automatisme industriel, contrôle-commande, systèmes embarqués IoT et modélisation multiphysique sous MATLAB/Simulink.
+                </p>
+
+                <!-- Boutons de Téléchargement des CVs (FR & ENG) -->
+                <div class="cv-download-bar">
+                    <a href="images/El Amri Mohamed_PFE_CV.pdf" download="El_Amri_Mohamed_CV_FR.pdf" class="btn btn-primary interactive">
+                        <i class="fas fa-file-pdf"></i>
+                        <span data-fr="Télécharger CV (FR)" data-en="Download Resume (FR)">Télécharger CV (FR)</span>
+                    </a>
+                    <a href="images/El Amri Mohamed_PFE_CV_ENG.PDF" download="El_Amri_Mohamed_CV_ENG.pdf" class="btn btn-glass interactive">
+                        <i class="fas fa-file-pdf"></i>
+                        <span data-fr="Télécharger CV (ENG)" data-en="Download Resume (ENG)">Télécharger CV (ENG)</span>
+                    </a>
+                </div>
+
+                <div class="hero-metrics">
+                    <div class="metric-item">
+                        <span class="metric-value">PLC / TIA</span>
+                        <span class="metric-label" data-fr="Automatisme Siemens" data-en="Siemens Automation">Automatisme Siemens</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value">PID & SIM</span>
+                        <span class="metric-label">MATLAB / Simulink</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value">EMB / IoT</span>
+                        <span class="metric-label" data-fr="ESP32, STM32, Arduino" data-en="ESP32, STM32, Arduino">ESP32, STM32, Arduino</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="portrait-glass-wrapper interactive lightbox-trigger"
+                     data-title="El Amri Mohamed — Ingénieur en Mécatronique"
+                     data-desc="Étudiant en 5ème année (Bac+5) en Génie Mécatronique à l'ENSA Tétouan. À la recherche d'un stage de Projet de Fin d'Études (PFE)."
+                     data-skills="ENSA Tétouan • Automatisme • Systèmes Embarqués • Simulation">
+                    <img src="images/photo.jpeg" alt="El Amri Mohamed - Ingénieur en Mécatronique" class="portrait-img">
+                    <div class="portrait-caption">
+                        <span>Tétouan, Maroc</span>
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION UNIQUE UNIFIÉE : Simulation Adaptive Control by MATLAB -->
+    <section id="project-hub" class="projects section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag mono-accent" data-fr="01 // PROJET GLOBAL & SIMULATION" data-en="01 // GLOBAL PROJECT & SIMULATION">01 // PROJET GLOBAL & SIMULATION</span>
+                <h2 data-fr="Simulation Adaptive Control <span class='gradient-text'>by MATLAB</span>" data-en="Simulation Adaptive Control <span class='gradient-text'>by MATLAB</span>">Simulation Adaptive Control <span class="gradient-text">by MATLAB</span></h2>
+                <p data-fr="Projet d'ingénierie global regroupant l'étude d'optimisation industrielle (Stage PFA chez MOTHERSON) et l'ensemble des analyses de simulation de contrôle et d'asservissement." data-en="Comprehensive engineering project integrating industrial optimization (PFA Internship at MOTHERSON) and all control simulation and servo-analysis results.">
+                    Projet d'ingénierie global regroupant l'étude d'optimisation industrielle (Stage PFA chez MOTHERSON) et l'ensemble des analyses de simulation de contrôle et d'asservissement.
+                </p>
+            </div>
+
+            <div class="unified-project-hub">
+                
+                <!-- Document Principal : Rapport PFA & Étude MOTHERSON -->
+                <article class="hub-main-doc reveal">
+                    <div class="hub-media-lg interactive lightbox-trigger"
+                         data-title="Stage PFA — Optimisation de WIP Industriel & Contrôle (MOTHERSON)"
+                         data-desc="Stage de 2 mois au service méthode de MOTHERSON (2026). Étude et analyse du WIP (Work In Progress), identification des zones de stockage intermédiaire et conception par CATIA V5 de chariots ergonomiques adaptés réduisant l'espace occupé, couplé à la simulation de contrôle sous MATLAB."
+                         data-skills="MOTHERSON • Service Méthode • CATIA V5 • WIP Industriel • MATLAB">
+                        <img src="images/PFA intership rapport.jpeg" alt="Rapport de Stage PFA MOTHERSON">
+                        <div class="hub-media-badge"><i class="fas fa-file-alt"></i> <span data-fr="Document Principal : Rapport PFA" data-en="Main Document: PFA Report">Document Principal : Rapport PFA</span></div>
+                    </div>
+                    <div class="hub-main-content">
+                        <span class="mono-accent" data-fr="CADRE INDUSTRIEL & RAPPORT PFA (2026)" data-en="INDUSTRIAL FRAMEWORK & PFA REPORT (2026)">CADRE INDUSTRIEL & RAPPORT PFA (2026)</span>
+                        <h3 data-fr="Optimisation de WIP & Modélisation du Système" data-en="WIP Optimization & System Modeling">Optimisation de WIP & Modélisation du Système</h3>
+                        <p data-fr="Ce rapport synthétise l'analyse des flux logistiques internes chez MOTHERSON et pose les bases mathématiques de l'asservissement. Les sections ci-dessous détaillent les résultats graphiques de simulation et de contrôle validés." data-en="This report synthesizes internal logistics flow analysis at MOTHERSON and establishes the mathematical foundations for servo-control. The sections below detail validated simulation and control graphic results.">
+                            Ce rapport synthétise l'analyse des flux logistiques internes chez MOTHERSON et pose les bases mathématiques de l'asservissement. Les sections ci-dessous détaillent les résultats graphiques de simulation et de contrôle validés.
+                        </p>
+                        <div class="pill-list">
+                            <span>MOTHERSON</span>
+                            <span>CATIA V5</span>
+                            <span>MATLAB / Simulink</span>
+                            <span>Contrôle Adaptatif</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sous-section Graphiques Techniques & Résultats de Simulation -->
+                <div class="hub-sub-gallery">
+                    <div class="sub-gallery-title reveal">
+                        <h4 data-fr="Analyses & Résultats de Simulation Associés" data-en="Associated Simulation Analyses & Results">Analyses & Résultats de Simulation Associés</h4>
+                        <p data-fr="Inspection détaillée des diagrammes fonctionnels, des réponses indicielles et des courbes de convergence." data-en="Detailed inspection of functional diagrams, step responses, and convergence curves.">Inspection détaillée des diagrammes fonctionnels, des réponses indicielles et des courbes de convergence.</p>
+                    </div>
+
+                    <div class="graphs-grid">
+                        
+                        <!-- Schéma-blocs -->
+                        <article class="graph-card reveal interactive lightbox-trigger"
+                                 data-title="Schéma-Blocs : Contrôle d'Aile d'Avion"
+                                 data-desc="Modélisation fonctionnelle sous MATLAB/Simulink de la boucle fermée, intégrant la commande adaptative et la fonction de transfert du système aéronautique."
+                                 data-skills="MATLAB / Simulink • Schéma-Blocs • Boucle Fermée">
+                            <div class="graph-thumb">
+                                <img src="images/the blocks.jpeg" alt="Schéma-blocs du système">
+                                <span class="graph-zoom-icon"><i class="fas fa-expand"></i></span>
+                            </div>
+                            <div class="graph-info">
+                                <span class="mono-accent">01 // ARCHITECTURE</span>
+                                <h5 data-fr="Schéma-Blocs du Système" data-en="System Block Diagram">Schéma-Blocs du Système</h5>
+                                <p data-fr="Modélisation structurelle de la boucle de rétroaction." data-en="Structural modeling of the feedback loop.">Modélisation structurelle de la boucle de rétroaction.</p>
+                            </div>
+                        </article>
+
+                        <!-- Courbe PID -->
+                        <article class="graph-card reveal interactive lightbox-trigger"
+                                 data-title="Réponse Indicielle du Régulateur PID"
+                                 data-desc="Analyse temporelle du régulateur PID appliqué au robot suiveur de ligne (Club Mécatronique ENSA), illustrant le temps de montée et l'amortissement des dépassements."
+                                 data-skills="Régulation PID • Temps de Réponse • Amortissement">
+                            <div class="graph-thumb">
+                                <img src="images/PID curve.jpeg" alt="Réponse et courbe du régulateur PID">
+                                <span class="graph-zoom-icon"><i class="fas fa-expand"></i></span>
+                            </div>
+                            <div class="graph-info">
+                                <span class="mono-accent">02 // RÉGULATION</span>
+                                <h5 data-fr="Courbe du Régulateur PID" data-en="PID Controller Curve">Courbe du Régulateur PID</h5>
+                                <p data-fr="Optimisation des gains Kp, Ki, Kd pour un suivi stable." data-en="Optimization of Kp, Ki, Kd gains for stable tracking.">Optimisation des gains Kp, Ki, Kd pour un suivi stable.</p>
+                            </div>
+                        </article>
+
+                        <!-- Diagramme de Stabilité -->
+                        <article class="graph-card reveal interactive lightbox-trigger"
+                                 data-title="Diagramme d'Analyse de Stabilité"
+                                 data-desc="Évaluation fréquentielle (marges de gain et de phase) garantissant la robustesse du système asservi face aux perturbations industrielles."
+                                 data-skills="Analyse Fréquentielle • Marges de Phase • Robustesse">
+                            <div class="graph-thumb">
+                                <img src="images/stability diagrame.jpeg" alt="Diagramme de stabilité">
+                                <span class="graph-zoom-icon"><i class="fas fa-expand"></i></span>
+                            </div>
+                            <div class="graph-info">
+                                <span class="mono-accent">03 // ROBUSTESSE</span>
+                                <h5 data-fr="Diagramme de Stabilité" data-en="Stability Diagram">Diagramme de Stabilité</h5>
+                                <p data-fr="Étude des marges de phase et de gain." data-en="Phase and gain margin studies.">Étude des marges de phase et de gain.</p>
+                            </div>
+                        </article>
+
+                        <!-- Courbe d'erreur -->
+                        <article class="graph-card reveal interactive lightbox-trigger"
+                                 data-title="Courbe d'Erreur Statique & Dynamique"
+                                 data-desc="Suivi de l'écart ε(t) entre la consigne et la mesure, démontrant l'annulation de l'erreur statique (utilisé aussi dans le projet d'irrigation IoT ESP32)."
+                                 data-skills="Précision Statique • Algorithme Adaptatif • IoT ESP32">
+                            <div class="graph-thumb">
+                                <img src="images/error curve.jpeg" alt="Courbe d'erreur et précision">
+                                <span class="graph-zoom-icon"><i class="fas fa-expand"></i></span>
+                            </div>
+                            <div class="graph-info">
+                                <span class="mono-accent">04 // PRÉCISION</span>
+                                <h5 data-fr="Courbe d'Erreur & Précision" data-en="Error Curve & Precision">Courbe d'Erreur & Précision</h5>
+                                <p data-fr="Convergence asymptotique de l'erreur vers zéro." data-en="Asymptotic convergence of error to zero.">Convergence asymptotique de l'erreur vers zéro.</p>
+                            </div>
+                        </article>
+
+                        <!-- Courbes Y et Ym -->
+                        <article class="graph-card reveal interactive lightbox-trigger"
+                                 data-title="Comparaison Sortie Réelle (Y) vs Modèle (Ym)"
+                                 data-desc="Superposition entre la trajectoire du système réel Y et le modèle de référence idéal Ym, validant la commande adaptative sous MATLAB."
+                                 data-skills="Modèle de Référence • Validation MATLAB • Suivi de Trajectoire">
+                            <div class="graph-thumb">
+                                <img src="images/Y and Ym curve.jpeg" alt="Comparaison des courbes de sortie Y et Ym">
+                                <span class="graph-zoom-icon"><i class="fas fa-expand"></i></span>
+                            </div>
+                            <div class="graph-info">
+                                <span class="mono-accent">05 // VALIDATION</span>
+                                <h5 data-fr="Comparaison Courbes Y & Ym" data-en="Y & Ym Curves Comparison">Comparaison Courbes Y & Ym</h5>
+                                <p data-fr="Adéquation parfaite entre réel et modèle." data-en="Perfect match between real and model.">Adéquation parfaite entre réel et modèle.</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Certifications Interactives -->
+    <section id="certifications" class="certifications section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag mono-accent" data-fr="02 // ACCRÉDITATIONS & FORMATIONS" data-en="02 // ACCREDITATIONS & TRAINING">02 // ACCRÉDITATIONS & FORMATIONS</span>
+                <h2 data-fr="Certifications <span class='gradient-text'>Professionnelles</span>" data-en="Professional <span class='gradient-text'>Certifications</span>">Certifications <span class="gradient-text">Professionnelles</span></h2>
+                <p data-fr="Cliquez sur une certification pour afficher le diplôme et consulter le détail des compétences validées." data-en="Click on a certification to view the diploma and check validated skills details.">Cliquez sur une certification pour afficher le diplôme et consulter le détail des compétences validées.</p>
+            </div>
+
+            <div class="cert-grid">
+                
+                <!-- Certificat 1 -->
+                <div class="cert-glass-card reveal interactive lightbox-trigger"
+                     data-title="Certification MATLAB & Simulink — Coursera (2025-2026)"
+                     data-desc="Maîtrise avancée de MATLAB et Simulink pour le calcul scientifique, la simulation dynamique et la modélisation mathématique de systèmes multiphysiques."
+                     data-skills="Calcul Matriciel • Schéma-Blocs Simulink • Simulation Dynamique">
+                    <div class="cert-thumb">
+                        <img src="images/matlab certificat.jpeg" alt="Certification MATLAB / Simulink">
+                        <div class="cert-hover-badge"><i class="fas fa-search-plus"></i> <span data-fr="Inspecter" data-en="Inspect">Inspecter</span></div>
+                    </div>
+                    <div class="cert-content">
+                        <span class="cert-tag mono-accent">COURSERA • 2025-2026</span>
+                        <h3>MATLAB & Simulink</h3>
+                        <p data-fr="Modélisation mathématique et simulation dynamique." data-en="Mathematical modeling and dynamic simulation.">Modélisation mathématique et simulation dynamique.</p>
+                        <span class="cert-cta"><span data-fr="Voir les compétences" data-en="View skills">Voir les compétences</span> <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Certificat 2 -->
+                <div class="cert-glass-card reveal interactive lightbox-trigger"
+                     data-title="Certification Automates Programmables PLC & TIA Portal — Coursera (2025-2026)"
+                     data-desc="Programmation d'automates industriels Siemens (S7-1200/S7-1500), configuration matérielle, langages normalisés (LADDER, SCL, FBD) et supervision IHM."
+                     data-skills="Siemens TIA Portal & Step7 • Langages LADDER / SCL • Supervision IHM">
+                    <div class="cert-thumb">
+                        <img src="images/PLC and tia portal certificat.jpeg" alt="Certification PLC et TIA Portal">
+                        <div class="cert-hover-badge"><i class="fas fa-search-plus"></i> <span data-fr="Inspecter" data-en="Inspect">Inspecter</span></div>
+                    </div>
+                    <div class="cert-content">
+                        <span class="cert-tag mono-accent">COURSERA • 2025-2026</span>
+                        <h3>PLC & Siemens TIA Portal</h3>
+                        <p data-fr="Programmation d'automates industriels et logique séquentielle." data-en="Industrial PLC programming and sequential logic.">Programmation d'automates industriels et logique séquentielle.</p>
+                        <span class="cert-cta"><span data-fr="Voir les compétences" data-en="View skills">Voir les compétences</span> <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Certificat 3 -->
+                <div class="cert-glass-card reveal interactive lightbox-trigger"
+                     data-title="Certification Contrôle-Commande & Régulation PID"
+                     data-desc="Synthèse, dimensionnement et réglage des correcteurs PID en boucle fermée. Maîtrise des méthodes de placement de pôles et d'élimination des erreurs statiques."
+                     data-skills="Synthèse de Correcteurs PID • Stabilité & Précision • Asservissement">
+                    <div class="cert-thumb">
+                        <img src="images/pid control certificat.jpeg" alt="Certification Contrôle PID">
+                        <div class="cert-hover-badge"><i class="fas fa-search-plus"></i> <span data-fr="Inspecter" data-en="Inspect">Inspecter</span></div>
+                    </div>
+                    <div class="cert-content">
+                        <span class="cert-tag mono-accent">AUTOMATIQUE • 2025-2026</span>
+                        <h3>Contrôle PID & Régulation</h3>
+                        <p data-fr="Dimensionnement de correcteurs et stabilité des boucles." data-en="Controller sizing and loop stability.">Dimensionnement de correcteurs et stabilité des boucles.</p>
+                        <span class="cert-cta"><span data-fr="Voir les compétences" data-en="View skills">Voir les compétences</span> <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Certificat 4 -->
+                <div class="cert-glass-card reveal interactive lightbox-trigger"
+                     data-title="Certification Microcontrôleurs & Systèmes Embarqués — Club Mécatronique ENSA"
+                     data-desc="Prototypage matériel, programmation embarquée en C/C++ sur Arduino, ESP32 et STM32, interfaçage de capteurs et protocoles de communication (I2C, SPI, UART)."
+                     data-skills="C/C++ Embarqué • Arduino & ESP32 • Capteurs & Bus I2C/SPI">
+                    <div class="cert-thumb">
+                        <img src="images/arduito Certificat.jpeg" alt="Certification Arduino & Systèmes Embarqués">
+                        <div class="cert-hover-badge"><i class="fas fa-search-plus"></i> <span data-fr="Inspecter" data-en="Inspect">Inspecter</span></div>
+                    </div>
+                    <div class="cert-content">
+                        <span class="cert-tag mono-accent">CLUB MÉCATRONIQUE ENSA</span>
+                        <h3>Arduino & Systèmes Embarqués</h3>
+                        <p data-fr="Conception électronique et programmation microcontrôleurs." data-en="Electronic design and microcontroller programming.">Conception électronique et programmation microcontrôleurs.</p>
+                        <span class="cert-cta"><span data-fr="Voir les compétences" data-en="View skills">Voir les compétences</span> <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Expertise & Compétences -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag mono-accent" data-fr="03 // STACK TECHNOLOGIQUE" data-en="03 // TECH STACK">03 // STACK TECHNOLOGIQUE</span>
+                <h2 data-fr="Domaines <span class='gradient-text'>d'Expertise</span>" data-en="Areas of <span class='gradient-text'>Expertise</span>">Domaines <span class="gradient-text">d'Expertise</span></h2>
+                <p data-fr="Un profil pluridisciplinaire unissant mécanique, électronique embarquée et automatique industrielle." data-en="A multidisciplinary profile uniting mechanics, embedded electronics, and industrial automation.">Un profil pluridisciplinaire unissant mécanique, électronique embarquée et automatique industrielle.</p>
+            </div>
+
+            <div class="skills-bento">
+                <div class="skill-glass reveal">
+                    <div class="skill-header">
+                        <i class="fas fa-microchip"></i>
+                        <h3 data-fr="Embarqué & IoT" data-en="Embedded & IoT">Embarqué & IoT</h3>
+                    </div>
+                    <p data-fr="Développement de systèmes connectés et autonomes temps réel." data-en="Development of connected and autonomous real-time systems.">Développement de systèmes connectés et autonomes temps réel.</p>
+                    <div class="pill-list">
+                        <span>Arduino</span><span>ESP32</span><span>STM32</span><span>FPGA</span>
+                    </div>
+                </div>
+
+                <div class="skill-glass reveal">
+                    <div class="skill-header">
+                        <i class="fas fa-cogs"></i>
+                        <h3 data-fr="Automatisme & PLC" data-en="Automation & PLC">Automatisme & PLC</h3>
+                    </div>
+                    <p data-fr="Programmation d'automates programmables et supervision." data-en="PLC programming and industrial supervision.">Programmation d'automates programmables et supervision.</p>
+                    <div class="pill-list">
+                        <span>TIA Portal</span><span>Step7</span><span>Siemens PLC</span><span>PID</span>
+                    </div>
+                </div>
+
+                <div class="skill-glass reveal">
+                    <div class="skill-header">
+                        <i class="fas fa-cubes"></i>
+                        <h3 data-fr="CAO & Simulation" data-en="CAD & Simulation">CAO & Simulation</h3>
+                    </div>
+                    <p data-fr="Modélisation 3D et simulation multiphysique avancée." data-en="3D modeling and advanced multiphysics simulation.">Modélisation 3D et simulation multiphysique avancée.</p>
+                    <div class="pill-list">
+                        <span>CATIA V5</span><span>MATLAB/Simulink</span><span>Abaqus</span><span>Proteus</span>
+                    </div>
+                </div>
+
+                <div class="skill-glass reveal">
+                    <div class="skill-header">
+                        <i class="fas fa-terminal"></i>
+                        <h3 data-fr="Programmation" data-en="Programming">Programmation</h3>
+                    </div>
+                    <p data-fr="Conception logicielle, scripts et traitement algorithmique." data-en="Software design, scripting, and algorithmic processing.">Conception logicielle, scripts et traitement algorithmique.</p>
+                    <div class="pill-list">
+                        <span>C / C++</span><span>Python</span><span>Java</span><span>SQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="contact-glass-container reveal">
+                <div class="contact-details">
+                    <span class="section-tag mono-accent" data-fr="04 // STAGE PFE 2026-2027" data-en="04 // PFE INTERNSHIP 2026-2027">04 // STAGE PFE 2026-2027</span>
+                    <h2 data-fr="Discutons de vos <span class='gradient-text'>projets industriels</span>" data-en="Let's discuss your <span class='gradient-text'>industrial projects</span>">Discutons de vos <span class="gradient-text">projets industriels</span></h2>
+                    <p data-fr="Actuellement en 5ème année à l'ENSA Tétouan, je suis à la recherche d'un stage PFE en automatisme, contrôle-commande ou systèmes embarqués." data-en="Currently in my 5th year at ENSA Tetouan, I am looking for a PFE internship in automation, control engineering, or embedded systems.">
+                        Actuellement en 5ème année à l'ENSA Tétouan, je suis à la recherche d'un stage PFE en automatisme, contrôle-commande ou systèmes embarqués.
+                    </p>
+
+                    <div class="direct-contacts">
+                        <a href="mailto:elamri.mohamed@etu.uae.ac.ma" class="contact-pill interactive">
+                            <i class="fas fa-envelope"></i>
+                            <span>elamri.mohamed@etu.uae.ac.ma</span>
+                        </a>
+                        <a href="tel:+212616627577" class="contact-pill interactive">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+212 6 16 62 75 77</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/el-amri-mohamed" target="_blank" rel="noopener noreferrer" class="contact-pill interactive">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>linkedin.com/in/el-amri-mohamed</span>
+                        </a>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="clean-form" novalidate>
+                    <div class="input-row">
+                        <div class="form-group">
+                            <label for="name" data-fr="Nom complet *" data-en="Full Name *">Nom complet *</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required class="interactive">
+                            <small class="error-msg" id="name-error"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-fr="Email professionnel *" data-en="Professional Email *">Email professionnel *</label>
+                            <input type="email" id="email" name="email" placeholder="nom@entreprise.com" required class="interactive">
+                            <small class="error-msg" id="email-error"></small>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" data-fr="Sujet *" data-en="Subject *">Sujet *</label>
+                        <input type="text" id="subject" name="subject" placeholder="Proposition de stage PFE..." required class="interactive">
+                        <small class="error-msg" id="subject-error"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-fr="Message *" data-en="Message *">Message *</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Décrivez votre besoin..." required class="interactive"></textarea>
+                        <small class="error-msg" id="message-error"></small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full interactive">
+                        <span data-fr="Envoyer le message" data-en="Send Message">Envoyer le message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <div id="form-feedback" class="form-feedback"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2026 El Amri Mohamed • Génie Mécatronique (ENSA Tétouan).</p>
+            <div class="footer-cv-links">
+                <a href="images/El Amri Mohamed_PFE_CV.pdf" download class="interactive">CV FR</a>
+                <span>•</span>
+                <a href="images/El Amri Mohamed_PFE_CV_ENG.PDF" download class="interactive">CV ENG</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fenêtre Modale (Lightbox) -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+        <div class="lightbox-modal">
+            <button class="lightbox-close interactive" id="lightbox-close" aria-label="Fermer">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="lightbox-grid">
+                <div class="lightbox-image-pane">
+                    <img id="lightbox-img" src="" alt="Aperçu agrandi">
+                </div>
+                <div class="lightbox-details-pane">
+                    <span class="mono-accent lightbox-tag" data-fr="DÉTAILS & ACQUIS TECHNIQUES" data-en="DETAILS & TECHNICAL SKILLS">DÉTAILS & ACQUIS TECHNIQUES</span>
+                    <h3 id="lightbox-title">Titre</h3>
+                    <p id="lightbox-desc" class="lightbox-description">Description...</p>
+                    <div class="lightbox-skills-box">
+                        <h4 data-fr="Mots-clés :" data-en="Keywords:">Mots-clés :</h4>
+                        <div id="lightbox-skills" class="pill-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
